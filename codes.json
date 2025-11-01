@@ -49,5 +49,11 @@
     "reward": "1k Cash",
     "expired": false
   }
+  {
+    "code": "TESTCODE",
+    "reward": "Explosion",
+    "expired": true
+  }
 ]
+
 
