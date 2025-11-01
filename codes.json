@@ -1,27 +1,53 @@
 [
   {
-    "code": "EXAMPLECODE1",
-    "reward": "500 coins",
-    "expired": true
-  },
-  {
-    "code": "EXAMPLECODE2",
-    "reward": "Rare morph",
+    "code": "FREEMORPH2025",
+    "reward": "Screaming Villager",
     "expired": false
   },
   {
-    "code": "WELCOME2025",
-    "reward": "1 Level Up",
+    "code": "LEVELTOME",
+    "reward": "+5 Levels",
     "expired": false
   },
   {
-    "code": "HALLOWEEN2024",
-    "reward": "Expired",
-    "expired": true
+    "code": "DEV5kFOLLOWERS",
+    "reward": "5k Cash",
+    "expired": false
   },
   {
-    "code": "DWELLERTEST",
-    "reward": "Expired",
-    "expired": true
+    "code": "GROUP5kMEMBERS",
+    "reward": "5k Cash",
+    "expired": false
+  },
+  {
+    "code": "CODEUPDATE2025",
+    "reward": "1k Cash",
+    "expired": false
+  },
+  {
+    "code": "GROUP1kMEMBERS",
+    "reward": "1k Cash",
+    "expired": false
+  },
+  {
+    "code": "GROUP2kMEMBERS",
+    "reward": "1k Cash",
+    "expired": false
+  },
+  {
+    "code": "GAME4mVISITS",
+    "reward": "1k Cash",
+    "expired": false
+  },
+  {
+    "code": "DEV3kFOLLOWERS",
+    "reward": "1k Cash",
+    "expired": false
+  },
+  {
+    "code": "NEWGAMEINDEV",
+    "reward": "1k Cash",
+    "expired": false
   }
 ]
+
