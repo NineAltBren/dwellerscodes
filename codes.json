@@ -1,0 +1,27 @@
+[
+  {
+    "code": "EXAMPLECODE1",
+    "reward": "500 coins",
+    "expired": true
+  },
+  {
+    "code": "EXAMPLECODE2",
+    "reward": "Rare morph",
+    "expired": false
+  },
+  {
+    "code": "WELCOME2025",
+    "reward": "1 Level Up",
+    "expired": false
+  },
+  {
+    "code": "HALLOWEEN2024",
+    "reward": "Expired",
+    "expired": true
+  },
+  {
+    "code": "DWELLERTEST",
+    "reward": "Expired",
+    "expired": true
+  }
+]

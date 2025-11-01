@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Official Dwellers | Codes Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            margin: 0;
+            padding: 20px;
+        }
+        header, footer {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            margin-top: 20px;
+        }
+        p, ul, li, h2, h3 {
+            text-align: left !important;
+        }
+        .info-box {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .info-text {
+            flex: 1 1 0;
+            max-width: 900px;
+            line-height: 1.6;
+        }
+        .info-img {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: stretch;
+            max-width: 40%;
+        }
+
+        .info-img img {
+            width: 100%;
+            height: 100%;
+            max-height: 550px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .center-img {
+            display: block;
+            margin: 10px auto;
+            max-width: 1000px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Estilo das listas de códigos */
+        .codes-section {
+            margin-top: 20px;
+        }
+        .code-list {
+            list-style: none;
+            padding: 0;
+        }
+        .code-list li {
+            background: white;
+            border-left: 5px solid #007bff;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .code-content {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .code-list li.expired {
+            border-left: 5px solid #888;
+            color: #777;
+            text-decoration: line-through;
+        }
+
+        .copy-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 4px 8px;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        .copy-btn:hover {
+            background: #0056b3;
+        }
+
+        /* Alerta discreto */
+        .copy-alert {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .copy-alert.show {
+            opacity: 1;
+        }
+
+        .error-msg {
+            color: #8b0000;
+            background: #ffd7d7;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin: 10px 0;
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            .info-box {
+                flex-direction: column;
+                align-items: center;
+            }
+            .info-text {
+                max-width: 100%;
+            }
+            .info-img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to <a href="https://www.roblox.com/games/17149813790/Dwellers-JoinedByCodeHttp" target="_blank" style="color: #fff; text-decoration: underline;">Dwellers</a> | Official Codes Site!</h1>
+    </header>
+
+    <img src="images/Png2.png" alt="Banner" class="center-img">
+
+    <!-- Info -->
+    <main>
+        <h2>ℹ️ Info :</h2>
+        <div class="info-box">
+            <div class="info-text">
+                <p>
+                    Welcome to the official <a href="https://www.roblox.com/games/17149813790/Dwellers-JoinedByCodeHttp" target="_blank">Dwellers</a> code page — your main source for all working and updated redeem codes.
+                    <a href="https://www.roblox.com/games/17149813790/Dwellers-JoinedByCodeHttp" target="_blank">Dwellers</a> is a thrilling multiplayer experience on Roblox where you explore mysterious areas, build, craft,
+                    and survive against challenging enemies. Play solo or with friends as you uncover secrets, unlock powers,
+                    and grow stronger with every update.
+                </p>
+                <p>
+                    This page provides every redeemable code for <a href="https://www.roblox.com/games/17149813790/Dwellers-JoinedByCodeHttp" target="_blank">Dwellers</a>. These codes unlock free in-game rewards such as
+                    coins, levels, items, morphs, and more. We constantly update this list whenever new codes are released
+                    by the developers, so check back regularly to stay current.
+                </p>
+                <p><strong>🪄 How to redeem a code:</strong><br>
+                    1. Open <a href="https://www.roblox.com/games/17149813790/Dwellers-JoinedByCodeHttp" target="_blank">Dwellers</a>.<br>
+                    2. Go to the <b>Codes</b> menu.<br>
+                    3. Enter the code exactly as shown (case-sensitive).<br>
+                    4. Press <b>Redeem</b> to claim your rewards.
+                </p>
+                <p>⚠️ Codes may expire or have limited uses, so redeem them quickly before they stop working.</p>
+            </div>
+            <div class="info-img">
+                <img src="images/Png.png" alt="thumbnail">
+            </div>
+        </div>
+    </main>
+
+    <!-- Codes (rendered dinamicamente) -->
+    <main>
+        <h2>💰 Codes :</h2>
+        <div id="codesArea" class="info-box">
+            <div class="info-text">
+                <p>
+                    Aqui estão os códigos carregados do arquivo <code>codes.json</code>.
+                </p>
+
+                <div class="codes-section">
+                    <h3>✅ Valid Codes</h3>
+                    <ul id="validList" class="code-list"></ul>
+
+                    <h3>❌ Expired Codes</h3>
+                    <ul id="expiredList" class="code-list"></ul>
+                </div>
+
+                <div id="fetchError" class="error-msg">Erro ao carregar os códigos. Verifique se o arquivo <code>codes.json</code> está na mesma pasta e se o site está sendo servido por um servidor (não abra via file://).</div>
+            </div>
+            <div class="info-img">
+                <img src="images/Png3.png" alt="Codes thumbnail">
+            </div>
+        </div>
+    </main>
+
+    <!-- FAQ -->
+    <main>
+        <h2>❓ FAQ :</h2>
+        <div class="info-box">
+            <div class="info-text">
+                <h3>🧩 Code not working</h3>
+                <p>
+                    If the code isn’t working, it has most likely expired or has already been redeemed on your account.
+                    Always make sure to type it exactly as shown, including uppercase and lowercase letters.
+                </p>
+
+                <h3>🎁 Reward not appearing</h3>
+                <p>
+                    If your reward doesn’t appear after redeeming a code, try resetting your character or rejoining the game.
+                    If the issue persists, join the 
+                    <a href="https://discord.com/invite/aHBKXKvB7y" target="_blank">official Discord community</a> 
+                    and report the problem to the developers.
+                </p>
+            </div>
+        </div>
+    </main>
+
+<footer style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #007bff; color: white;">
+    <!-- Copyright à esquerda -->
+    <p style="margin: 0;">&copy; 2025 Nineteen_DEV</p>
+
+    <!-- Links à direita -->
+    <div style="display: flex; gap: 15px;">
+        <a href="https://discord.com/invite/aHBKXKvB7y" target="_blank" title="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://www.roblox.com/games/17149813790/Dwellers-JoinedByCodeHttp" target="_blank" title="Roblox">
+            <img src="https://media.tenor.com/HO1YAH0_iMcAAAAj/roblox-logo.gif" alt="Roblox" style="width: 24px; height: 24px; filter: brightness(0) invert(1);">
+        </a>
+    </div>
+</footer>
+
+    <div class="copy-alert" id="copyAlert">✅ Code copied!</div>
+
+    <script>
+    // Função copiar com alerta
+    function copyCode(code) {
+        if (!navigator.clipboard) {
+            // fallback
+            const ta = document.createElement('textarea');
+            ta.value = code;
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            showAlert();
+            return;
+        }
+        navigator.clipboard.writeText(code).then(() => {
+            showAlert();
+        }).catch(() => {
+            showAlert();
+        });
+    }
+
+    function showAlert() {
+        const alertBox = document.getElementById('copyAlert');
+        alertBox.classList.add('show');
+        setTimeout(() => alertBox.classList.remove('show'), 2000);
+    }
+
+    // Renderiza um item na lista
+    function createListItem(item) {
+        const li = document.createElement('li');
+        if (item.expired) li.classList.add('expired');
+
+        const span = document.createElement('span');
+        span.className = 'code-content';
+        span.innerHTML = '<b>' + escapeHtml(item.code) + '</b> : ' + escapeHtml(item.reward);
+
+        const btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.textContent = '📋';
+        btn.onclick = () => copyCode(item.code);
+
+        li.appendChild(span);
+        li.appendChild(btn);
+
+        return li;
+    }
+
+    // Escapa HTML básico para evitar injeção acidental ao exibir valores
+    function escapeHtml(text) {
+        if (!text && text !== '') return '';
+        return String(text)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
+    // Carrega codes.json e popula as listas
+    fetch('codes.json')
+        .then(resp => {
+            if (!resp.ok) throw new Error('Network response was not ok');
+            return resp.json();
+        })
+        .then(data => {
+            if (!Array.isArray(data)) throw new Error('Formato inválido: esperado um array');
+            const validList = document.getElementById('validList');
+            const expiredList = document.getElementById('expiredList');
+
+            // limpa
+            validList.innerHTML = '';
+            expiredList.innerHTML = '';
+
+            // separa e ordena (opcional: colocando válidos primeiro)
+            data.forEach(item => {
+                const li = createListItem(item);
+                if (item.expired) expiredList.appendChild(li);
+                else validList.appendChild(li);
+            });
+        })
+        .catch(err => {
+            console.error('Erro ao carregar codes.json:', err);
+            document.getElementById('fetchError').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
